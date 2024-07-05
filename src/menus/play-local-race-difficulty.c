@@ -197,7 +197,7 @@ void Dummygpdifficulty_OnChange(void)
 			tooltip = "Challenge fierce competition at\x87 Gear 3\x80. For\x87 thrill-seekers!";
 			break;
 		case KARTGP_MASTER:
-			tooltip = "Let's go crazy! Take on brutal CPUs at\x87 Gear 3\x80: for\x85 lunatics only!";
+			tooltip = "Take on brutal CPUs at\x87 Gear 3\x80: Not for the faint of heart.";
 			break;
 	}
 

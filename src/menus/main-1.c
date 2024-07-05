@@ -45,7 +45,7 @@ menuitem_t MainMenu[] =
 		{.routine = M_InitOptions}, 0, 0},
 
 	{IT_STRING | IT_CALL, "Quit",
-		"Exit \"Dr. Robotnik's Ring Racers\".", NULL,
+		"Exit \"Sixfour Kart: World Tour\".", NULL,
 		{.routine = M_QuitSRB2}, 0, 0},
 };
 

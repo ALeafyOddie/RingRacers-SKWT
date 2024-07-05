@@ -43,7 +43,7 @@ menuitem_t OPTIONS_Gameplay[] =
 	{IT_STRING | IT_CVAR, "Point Limit", "How many strikes it takes to win a Battle.",
 		NULL, {.cvar = &cv_pointlimit}, 0, 0},
 
-	{IT_STRING | IT_CVAR, "Starting Bumpers", "How many bumpers players start with in Battle.",
+	{IT_STRING | IT_CVAR, "Starting Balloons", "How many balloons players start with in Battle.",
 		NULL, {.cvar = &cv_kartbumpers}, 0, 0},
 
 

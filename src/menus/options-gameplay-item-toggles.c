@@ -16,40 +16,40 @@
 menuitem_t OPTIONS_GameplayItems[] =
 {
 	// Mostly handled by the drawing function.
-	{IT_KEYHANDLER | IT_NOTHING, NULL, "Super Ring",			NULL, {.routine = M_HandleItemToggles}, KITEM_SUPERRING, 0},
-	{IT_KEYHANDLER | IT_NOTHING, NULL, "Self-Propelled Bomb",	NULL, {.routine = M_HandleItemToggles}, KITEM_SPB, 0},
+	{IT_KEYHANDLER | IT_NOTHING, NULL, "Coin Stack",			NULL, {.routine = M_HandleItemToggles}, KITEM_SUPERRING, 0},
+	{IT_KEYHANDLER | IT_NOTHING, NULL, "Turtonator Shell",	NULL, {.routine = M_HandleItemToggles}, KITEM_SPB, 0},
 	{IT_KEYHANDLER | IT_NOTHING, NULL, NULL, NULL, {.routine = M_HandleItemToggles}, 255, 0}, // maybe KITEM_PUYO eventually?
-	{IT_KEYHANDLER | IT_NOTHING, NULL, "Toggle All / Ring Box Only", NULL, {.routine = M_HandleItemToggles}, 0, 0},
+	{IT_KEYHANDLER | IT_NOTHING, NULL, "Toggle All / Coin Box Only", NULL, {.routine = M_HandleItemToggles}, 0, 0},
 
-	{IT_KEYHANDLER | IT_NOTHING, NULL, "Sneaker",				NULL, {.routine = M_HandleItemToggles}, KITEM_SNEAKER, 0},
-	{IT_KEYHANDLER | IT_NOTHING, NULL, "Sneaker x2",			NULL, {.routine = M_HandleItemToggles}, KRITEM_DUALSNEAKER, 0},
-	{IT_KEYHANDLER | IT_NOTHING, NULL, "Sneaker x3",			NULL, {.routine = M_HandleItemToggles}, KRITEM_TRIPLESNEAKER, 0},
-	{IT_KEYHANDLER | IT_NOTHING, NULL, "Rocket Sneaker",		NULL, {.routine = M_HandleItemToggles}, KITEM_ROCKETSNEAKER, 0},
+	{IT_KEYHANDLER | IT_NOTHING, NULL, "Oran Berry",			NULL, {.routine = M_HandleItemToggles}, KITEM_SNEAKER, 0},
+	{IT_KEYHANDLER | IT_NOTHING, NULL, "Oran Berry x2",			NULL, {.routine = M_HandleItemToggles}, KRITEM_DUALSNEAKER, 0},
+	{IT_KEYHANDLER | IT_NOTHING, NULL, "Oran Berry x3",			NULL, {.routine = M_HandleItemToggles}, KRITEM_TRIPLESNEAKER, 0},
+	{IT_KEYHANDLER | IT_NOTHING, NULL, "X Speed",				NULL, {.routine = M_HandleItemToggles}, KITEM_ROCKETSNEAKER, 0},
 
-	{IT_KEYHANDLER | IT_NOTHING, NULL, "Banana",				NULL, {.routine = M_HandleItemToggles}, KITEM_BANANA, 0},
-	{IT_KEYHANDLER | IT_NOTHING, NULL, "Banana x3",				NULL, {.routine = M_HandleItemToggles}, KRITEM_TRIPLEBANANA, 0},
-	{IT_KEYHANDLER | IT_NOTHING, NULL, "Eggmark",				NULL, {.routine = M_HandleItemToggles}, KITEM_EGGMAN, 0},
+	{IT_KEYHANDLER | IT_NOTHING, NULL, "Nanab Berry",			NULL, {.routine = M_HandleItemToggles}, KITEM_BANANA, 0},
+	{IT_KEYHANDLER | IT_NOTHING, NULL, "Nanab Berry x3",		NULL, {.routine = M_HandleItemToggles}, KRITEM_TRIPLEBANANA, 0},
+	{IT_KEYHANDLER | IT_NOTHING, NULL, "Fake Item Box",			NULL, {.routine = M_HandleItemToggles}, KITEM_EGGMAN, 0},
 	{IT_KEYHANDLER | IT_NOTHING, NULL, "Gachabom",				NULL, {.routine = M_HandleItemToggles}, KITEM_GACHABOM, 0},
 
-	{IT_KEYHANDLER | IT_NOTHING, NULL, "Orbinaut",				NULL, {.routine = M_HandleItemToggles}, KITEM_ORBINAUT, 0},
-	{IT_KEYHANDLER | IT_NOTHING, NULL, "Orbinaut x3",			NULL, {.routine = M_HandleItemToggles}, KRITEM_TRIPLEORBINAUT, 0},
-	{IT_KEYHANDLER | IT_NOTHING, NULL, "Orbinaut x4",			NULL, {.routine = M_HandleItemToggles}, KRITEM_QUADORBINAUT, 0},
+	{IT_KEYHANDLER | IT_NOTHING, NULL, "Squirtle Shell",		NULL, {.routine = M_HandleItemToggles}, KITEM_ORBINAUT, 0},
+	{IT_KEYHANDLER | IT_NOTHING, NULL, "Squirtle Shell x3",		NULL, {.routine = M_HandleItemToggles}, KRITEM_TRIPLEORBINAUT, 0},
+	{IT_KEYHANDLER | IT_NOTHING, NULL, "Squirtle Shell x4",		NULL, {.routine = M_HandleItemToggles}, KRITEM_QUADORBINAUT, 0},
 	{IT_KEYHANDLER | IT_NOTHING, NULL, "Gachabom x3",			NULL, {.routine = M_HandleItemToggles}, KRITEM_TRIPLEGACHABOM, 0},
 
-	{IT_KEYHANDLER | IT_NOTHING, NULL, "Jawz",					NULL, {.routine = M_HandleItemToggles}, KITEM_JAWZ, 0},
-	{IT_KEYHANDLER | IT_NOTHING, NULL, "Jawz x2",				NULL, {.routine = M_HandleItemToggles}, KRITEM_DUALJAWZ, 0},
-	{IT_KEYHANDLER | IT_NOTHING, NULL, "Proximity Mine",		NULL, {.routine = M_HandleItemToggles}, KITEM_MINE, 0},
+	{IT_KEYHANDLER | IT_NOTHING, NULL, "Chewtle Shell",			NULL, {.routine = M_HandleItemToggles}, KITEM_JAWZ, 0},
+	{IT_KEYHANDLER | IT_NOTHING, NULL, "Chewtle Shell x2",		NULL, {.routine = M_HandleItemToggles}, KRITEM_DUALJAWZ, 0},
+	{IT_KEYHANDLER | IT_NOTHING, NULL, "Blast Seed",			NULL, {.routine = M_HandleItemToggles}, KITEM_MINE, 0},
 	{IT_KEYHANDLER | IT_NOTHING, NULL, "Ballhog",				NULL, {.routine = M_HandleItemToggles}, KITEM_BALLHOG, 0},
 
-	{IT_KEYHANDLER | IT_NOTHING, NULL, "Hyudoro",				NULL, {.routine = M_HandleItemToggles}, KITEM_HYUDORO, 0},
-	{IT_KEYHANDLER | IT_NOTHING, NULL, "Drop Target",			NULL, {.routine = M_HandleItemToggles}, KITEM_DROPTARGET, sfx_s258},
-	{IT_KEYHANDLER | IT_NOTHING, NULL, "Land Mine",				NULL, {.routine = M_HandleItemToggles}, KITEM_LANDMINE, 0},
-	{IT_KEYHANDLER | IT_NOTHING, NULL, "Pogo Spring",		 	NULL, {.routine = M_HandleItemToggles}, KITEM_POGOSPRING, 0},
+	{IT_KEYHANDLER | IT_NOTHING, NULL, "Haunter",				NULL, {.routine = M_HandleItemToggles}, KITEM_HYUDORO, 0},
+	{IT_KEYHANDLER | IT_NOTHING, NULL, "Bumper",				NULL, {.routine = M_HandleItemToggles}, KITEM_DROPTARGET, sfx_s258},
+	{IT_KEYHANDLER | IT_NOTHING, NULL, "Blast Trap",			NULL, {.routine = M_HandleItemToggles}, KITEM_LANDMINE, 0},
+	{IT_KEYHANDLER | IT_NOTHING, NULL, "Air Balloon",		 	NULL, {.routine = M_HandleItemToggles}, KITEM_POGOSPRING, 0},
 
-	{IT_KEYHANDLER | IT_NOTHING, NULL, "Invincibility",			NULL, {.routine = M_HandleItemToggles}, KITEM_INVINCIBILITY, 0},
-	{IT_KEYHANDLER | IT_NOTHING, NULL, "Grow",					NULL, {.routine = M_HandleItemToggles}, KITEM_GROW, 0},
+	{IT_KEYHANDLER | IT_NOTHING, NULL, "Awakening Emera",		NULL, {.routine = M_HandleItemToggles}, KITEM_INVINCIBILITY, 0},
+	{IT_KEYHANDLER | IT_NOTHING, NULL, "Wishing Star",			NULL, {.routine = M_HandleItemToggles}, KITEM_GROW, 0},
 	{IT_KEYHANDLER | IT_NOTHING, NULL, "Shrink",				NULL, {.routine = M_HandleItemToggles}, KITEM_SHRINK, 0},
-	{IT_KEYHANDLER | IT_NOTHING, NULL, "Gardentop",		 		NULL, {.routine = M_HandleItemToggles}, KITEM_GARDENTOP, 0},
+	{IT_KEYHANDLER | IT_NOTHING, NULL, "Spinning Top",		 	NULL, {.routine = M_HandleItemToggles}, KITEM_GARDENTOP, 0},
 
 	{IT_KEYHANDLER | IT_NOTHING, NULL, "Lightning Shield",		NULL, {.routine = M_HandleItemToggles}, KITEM_LIGHTNINGSHIELD, 0},
 	{IT_KEYHANDLER | IT_NOTHING, NULL, "Bubble Shield",			NULL, {.routine = M_HandleItemToggles}, KITEM_BUBBLESHIELD, 0},

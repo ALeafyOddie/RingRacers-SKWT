@@ -111,8 +111,8 @@ void M_QuitSRB2(INT32 choice)
 			"Quit Game",
 			"Are you sure you want to quit playing?\n",
 			&M_QuitResponse, MM_YESNO,
-			"Leave the game",
-			"No, I want to go back!"
+			"YES! YES! YES!",
+			"Like hell I will!"
 		);
 
 		return;

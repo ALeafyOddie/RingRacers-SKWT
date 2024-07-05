@@ -68,7 +68,7 @@ menuitem_t EXTRAS_Main[] =
 	{IT_STRING | IT_CALL, "Online Manual", "Learn everything there is to know about handling, items, and strategy.",
 		NULL, {.routine = M_Manual}, 0, 0},
 
-	{IT_STRING | IT_CALL, "Tutorial", "Help Dr. Robotnik and Tails test out their new Ring Racers.",
+	{IT_STRING | IT_CALL, "Tutorial", "Warm up your skills.",
 		NULL, {.routine = M_LevelSelectInit}, 0, GT_TUTORIAL},
 
 	{IT_STRING | IT_CALL, "Statistics", "Look back on some of your greatest achievements such as your playtime and wins!",
@@ -142,7 +142,7 @@ void M_InitExtras(INT32 choice)
 	if (M_SecretUnlocked(SECRET_EGGTV, true))
 	{
 		EXTRAS_Main[extras_eggtv].status = IT_STRING | IT_CALL;
-		EXTRAS_Main[extras_eggtv].text = "Egg TV";
+		EXTRAS_Main[extras_eggtv].text = "Sixfour Kart TV";
 		EXTRAS_Main[extras_eggtv].tooltip = "Watch the replays you've saved throughout your many races & battles!";
 	}
 	else

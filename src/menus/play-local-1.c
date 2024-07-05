@@ -20,7 +20,7 @@ menuitem_t PLAY_GamemodesMenu[] =
 	{IT_STRING | IT_CALL, "Battle", "It's last kart standing in this free-for-all!",
 		"MENUI011", {.routine = M_LevelSelectInit}, 0, GT_BATTLE},
 
-	{IT_STRING | IT_CALL, "Prisons", "Bust up all of the Prison Eggs in record time!",
+	{IT_STRING | IT_CALL, "Prisons", "Smash the targets in record time!",
 		"MENUI007", {.routine = M_LevelSelectInit}, 1, GT_BATTLE},
 
 	{IT_STRING | IT_CALL, "Special", "Strike your target and secure the prize!",

@@ -436,7 +436,7 @@ void level_tally_t::Init(player_t *player)
 		{
 			snprintf(
 				header, sizeof header,
-				"NO CONTEST..."
+				"RETIRED..."
 			);
 		}
 	}

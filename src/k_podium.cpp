@@ -248,7 +248,7 @@ void podiumData_s::Init(void)
 	{
 		snprintf(
 			header, sizeof header,
-			"NO GOOD..."
+			"WHAT A PITY!"
 		);
 	}
 	else

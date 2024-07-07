@@ -142,7 +142,7 @@ void M_InitExtras(INT32 choice)
 	if (M_SecretUnlocked(SECRET_EGGTV, true))
 	{
 		EXTRAS_Main[extras_eggtv].status = IT_STRING | IT_CALL;
-		EXTRAS_Main[extras_eggtv].text = "Sixfour Kart TV";
+		EXTRAS_Main[extras_eggtv].text = "World Tour TV";
 		EXTRAS_Main[extras_eggtv].tooltip = "Watch the replays you've saved throughout your many races & battles!";
 	}
 	else

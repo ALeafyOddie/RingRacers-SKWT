@@ -29,17 +29,17 @@ menuitem_t OPTIONS_GameplayItems[] =
 	{IT_KEYHANDLER | IT_NOTHING, NULL, "Nanab Berry",			NULL, {.routine = M_HandleItemToggles}, KITEM_BANANA, 0},
 	{IT_KEYHANDLER | IT_NOTHING, NULL, "Nanab Berry x3",		NULL, {.routine = M_HandleItemToggles}, KRITEM_TRIPLEBANANA, 0},
 	{IT_KEYHANDLER | IT_NOTHING, NULL, "Fake Item Box",			NULL, {.routine = M_HandleItemToggles}, KITEM_EGGMAN, 0},
-	{IT_KEYHANDLER | IT_NOTHING, NULL, "Gachabom",				NULL, {.routine = M_HandleItemToggles}, KITEM_GACHABOM, 0},
+	{IT_KEYHANDLER | IT_NOTHING, NULL, "Gyrobomb",				NULL, {.routine = M_HandleItemToggles}, KITEM_GACHABOM, 0},
 
 	{IT_KEYHANDLER | IT_NOTHING, NULL, "Squirtle Shell",		NULL, {.routine = M_HandleItemToggles}, KITEM_ORBINAUT, 0},
 	{IT_KEYHANDLER | IT_NOTHING, NULL, "Squirtle Shell x3",		NULL, {.routine = M_HandleItemToggles}, KRITEM_TRIPLEORBINAUT, 0},
 	{IT_KEYHANDLER | IT_NOTHING, NULL, "Squirtle Shell x4",		NULL, {.routine = M_HandleItemToggles}, KRITEM_QUADORBINAUT, 0},
-	{IT_KEYHANDLER | IT_NOTHING, NULL, "Gachabom x3",			NULL, {.routine = M_HandleItemToggles}, KRITEM_TRIPLEGACHABOM, 0},
+	{IT_KEYHANDLER | IT_NOTHING, NULL, "Gyrobomb x3",			NULL, {.routine = M_HandleItemToggles}, KRITEM_TRIPLEGACHABOM, 0},
 
 	{IT_KEYHANDLER | IT_NOTHING, NULL, "Chewtle Shell",			NULL, {.routine = M_HandleItemToggles}, KITEM_JAWZ, 0},
 	{IT_KEYHANDLER | IT_NOTHING, NULL, "Chewtle Shell x2",		NULL, {.routine = M_HandleItemToggles}, KRITEM_DUALJAWZ, 0},
 	{IT_KEYHANDLER | IT_NOTHING, NULL, "Blast Seed",			NULL, {.routine = M_HandleItemToggles}, KITEM_MINE, 0},
-	{IT_KEYHANDLER | IT_NOTHING, NULL, "Ballhog",				NULL, {.routine = M_HandleItemToggles}, KITEM_BALLHOG, 0},
+	{IT_KEYHANDLER | IT_NOTHING, NULL, "Bullet Seed",			NULL, {.routine = M_HandleItemToggles}, KITEM_BALLHOG, 0},
 
 	{IT_KEYHANDLER | IT_NOTHING, NULL, "Haunter",				NULL, {.routine = M_HandleItemToggles}, KITEM_HYUDORO, 0},
 	{IT_KEYHANDLER | IT_NOTHING, NULL, "Bumper",				NULL, {.routine = M_HandleItemToggles}, KITEM_DROPTARGET, sfx_s258},
@@ -48,12 +48,12 @@ menuitem_t OPTIONS_GameplayItems[] =
 
 	{IT_KEYHANDLER | IT_NOTHING, NULL, "Awakening Emera",		NULL, {.routine = M_HandleItemToggles}, KITEM_INVINCIBILITY, 0},
 	{IT_KEYHANDLER | IT_NOTHING, NULL, "Wishing Star",			NULL, {.routine = M_HandleItemToggles}, KITEM_GROW, 0},
-	{IT_KEYHANDLER | IT_NOTHING, NULL, "Shrink",				NULL, {.routine = M_HandleItemToggles}, KITEM_SHRINK, 0},
+	{IT_KEYHANDLER | IT_NOTHING, NULL, "Minimize Ray",				NULL, {.routine = M_HandleItemToggles}, KITEM_SHRINK, 0},
 	{IT_KEYHANDLER | IT_NOTHING, NULL, "Spinning Top",		 	NULL, {.routine = M_HandleItemToggles}, KITEM_GARDENTOP, 0},
 
-	{IT_KEYHANDLER | IT_NOTHING, NULL, "Lightning Shield",		NULL, {.routine = M_HandleItemToggles}, KITEM_LIGHTNINGSHIELD, 0},
-	{IT_KEYHANDLER | IT_NOTHING, NULL, "Bubble Shield",			NULL, {.routine = M_HandleItemToggles}, KITEM_BUBBLESHIELD, 0},
-	{IT_KEYHANDLER | IT_NOTHING, NULL, "Flame Shield",			NULL, {.routine = M_HandleItemToggles}, KITEM_FLAMESHIELD, 0},
+	{IT_KEYHANDLER | IT_NOTHING, NULL, "Zenith Shield",			NULL, {.routine = M_HandleItemToggles}, KITEM_LIGHTNINGSHIELD, 0},
+	{IT_KEYHANDLER | IT_NOTHING, NULL, "Bubble",				NULL, {.routine = M_HandleItemToggles}, KITEM_BUBBLESHIELD, 0},
+	{IT_KEYHANDLER | IT_NOTHING, NULL, "Flame Charge",			NULL, {.routine = M_HandleItemToggles}, KITEM_FLAMESHIELD, 0},
 	{IT_KEYHANDLER | IT_NOTHING, NULL, "Kitchen Sink",			NULL, {.routine = M_HandleItemToggles}, KITEM_KITCHENSINK, 0}
 };
 

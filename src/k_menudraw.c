@@ -5696,7 +5696,7 @@ static char *M_GetGameplayMode(void)
 	}
 
 	if (cv_4thgear.value)
-		return va("4th Gear!");
+		return va("200cc!");
 
 	return va("Gear %d\n", gamespeed+1);
 }

@@ -463,7 +463,7 @@ void level_tally_t::Init(player_t *player)
 		{
 			snprintf(
 				header, sizeof header,
-				"PRISON BREAK"
+				"TARGET TEST"
 			);
 		}
 		else

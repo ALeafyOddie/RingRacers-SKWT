@@ -944,14 +944,14 @@ consvar_t cv_dummyextraspassword = MenuDummy("dummyextraspassword", "");
 
 extern CV_PossibleValue_t gpdifficulty_cons_t[];
 void Dummygpdifficulty_OnChange(void);
-consvar_t cv_dummygpdifficulty = MenuDummy("dummygpdifficulty", "Intense").values(gpdifficulty_cons_t).onchange(Dummygpdifficulty_OnChange);
+consvar_t cv_dummygpdifficulty = MenuDummy("dummygpdifficulty", "Normal").values(gpdifficulty_cons_t).onchange(Dummygpdifficulty_OnChange);
 consvar_t cv_dummygpencore = MenuDummy("dummygpencore", "Off").on_off();
 
 consvar_t cv_dummyip = MenuDummy("dummyip", "");
 consvar_t cv_dummyipselect = MenuDummy("dummyipselect", "0").min_max(0, 2);
 
 extern CV_PossibleValue_t dummykartspeed_cons_t[];
-consvar_t cv_dummykartspeed = MenuDummy("dummykartspeed", "Gear 2").values(dummykartspeed_cons_t);
+consvar_t cv_dummykartspeed = MenuDummy("dummykartspeed", "100cc").values(dummykartspeed_cons_t);
 
 consvar_t cv_dummymatchbots = MenuDummy("dummymatchbots", "Off").values({
 	{0, "Off"},

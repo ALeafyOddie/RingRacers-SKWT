@@ -5687,16 +5687,16 @@ static char *M_GetGameplayMode(void)
 	if (grandprixinfo.gp == true)
 	{
 		if (grandprixinfo.masterbots)
-			return va("Master");
+			return va("Nightmare");
 		if (grandprixinfo.gamespeed == KARTSPEED_HARD)
-			return va("Vicious");
+			return va("Brutal");
 		if (grandprixinfo.gamespeed == KARTSPEED_NORMAL)
-			return va("Intense");
-		return va("Relaxed");
+			return va("Normal");
+		return va("Breezy");
 	}
 
 	if (cv_4thgear.value)
-		return va("4th Gear!");
+		return va("200cc!");
 
 	return va("Gear %d\n", gamespeed+1);
 }

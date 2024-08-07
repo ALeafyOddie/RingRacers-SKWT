@@ -1787,7 +1787,7 @@ void F_TitleScreenDrawer(void)
 		if (finalecount >= GONERTYPEWRITERWAIT)
 		{
 			INT32 checkcount = finalecount - GONERTYPEWRITERWAIT;
-			const char *typetext = "RING RACERS";
+			const char *typetext = "WORLD TOUR";
 			INT32 bx = V_TitleCardStringWidth(typetext, false);
 
 			V_DrawTitleCardString((BASEVIDWIDTH - bx)/2, 80, typetext, V_TRANSLUCENT, true, (checkcount/GONERTYPEWRITERDURATION), 0, false);
@@ -1808,7 +1808,7 @@ void F_TitleScreenDrawer(void)
 				{
 					// Secondary Megamix disclaimer. ~toast 060524
 
-					const char *sillystring = "Technical Kart Racer";
+					const char *sillystring = "Sixfour Kart 2";
 					const INT32 sillywidth = V_MenuStringWidth(sillystring, 0) + 12;
 					INT32 sillyx = -((INT32)finalecount % sillywidth);
 
@@ -1852,7 +1852,7 @@ void F_TitleScreenDrawer(void)
 			if (trans < 0)
 				trans = 0;
 			trans <<= V_ALPHASHIFT;
-			V_DrawCenteredMenuString(BASEVIDWIDTH/2, (BASEVIDHEIGHT/2) - 7, trans, "Dr. Robotnik's");
+			V_DrawCenteredMenuString(BASEVIDWIDTH/2, (BASEVIDHEIGHT/2) - 7, trans, "Sixfour Kart");
 		}
 	}
 	else switch (curttmode)

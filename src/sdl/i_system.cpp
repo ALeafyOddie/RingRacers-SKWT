@@ -287,10 +287,10 @@ static void I_ShowErrorMessageBox(const char *messagefordevelopers, boolean dump
 	snprintf(
 		finalmessage,
 		sizeof(finalmessage),
-			"Hee Ho!\n"
+			"Oh My God!!\n"
 			"\n"
-			"\"Dr. Robotnik's Ring Racers\" has encountered an unrecoverable error and needs to close.\n"
-			"This is (usually) not your fault, but we encourage you to report it in the community. This should be done alongside your "
+			"\"Sixfour Kart: World Tour\" has encountered an error that it cannot recover from and therefore must close.\n"
+			"This is (usually) not your fault, but we encourage you to report to the devs. This should be done alongside your "
 			"%s"
 			"log file (%s).\n"
 			"\n"

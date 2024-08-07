@@ -2374,16 +2374,16 @@ static const char *M_GetConditionString(condition_t *cn)
 
 			if (cn->extrainfo2 == KARTSPEED_NORMAL)
 			{
-				speedtext = " on Intense";
+				speedtext = " on Normal";
 			}
 			else if (cn->extrainfo2 == KARTSPEED_HARD)
 			{
-				speedtext = " on Vicious";
+				speedtext = " on Brutal";
 			}
 			else if (cn->extrainfo2 == KARTGP_MASTER)
 			{
 				if (M_SecretUnlocked(SECRET_MASTERMODE, true))
-					speedtext = " on Master";
+					speedtext = " on Nightmare";
 				else
 					speedtext = " on ???";
 			}
@@ -2456,9 +2456,9 @@ static const char *M_GetConditionString(condition_t *cn)
 				case ET_MAP:
 					work = "";
 					if (emblemlocations[i].flags & ME_SPBATTACK)
-						work = (M_SecretUnlocked(SECRET_SPBATTACK, true) ? "SPB ATTACK: " : "???: ");
+						work = (M_SecretUnlocked(SECRET_SPBATTACK, true) ? "TURTONATOR ATTACK: " : "???: ");
 					else if (emblemlocations[i].flags & ME_ENCORE)
-						work = (M_SecretUnlocked(SECRET_ENCORE, true) ? "ENCORE MODE: " : "???: ");
+						work = (M_SecretUnlocked(SECRET_ENCORE, true) ? "DISTORTION MODE: " : "???: ");
 
 					work = va("%s%s %s",
 						work,
@@ -2686,16 +2686,16 @@ static const char *M_GetConditionString(condition_t *cn)
 
 			if (cn->requirement == KARTSPEED_NORMAL)
 			{
-				speedtext = "on Intense";
+				speedtext = "on Normal";
 			}
 			else if (cn->requirement == KARTSPEED_HARD)
 			{
-				speedtext = "on Vicious";
+				speedtext = "on Brutal";
 			}
 			else if (cn->requirement == KARTGP_MASTER)
 			{
 				if (M_SecretUnlocked(SECRET_MASTERMODE, true))
-					speedtext = "on Master";
+					speedtext = "on Nightmare";
 				else
 					speedtext = "on ???";
 			}
@@ -2786,7 +2786,7 @@ static const char *M_GetConditionString(condition_t *cn)
 				return NULL;
 			return "smash the UFO Catcher";
 		case UCRP_CHASEDBYSPB:
-			return "while chased by a Self-Propelled Bomb";
+			return "while chased by a Turtonator Shell";
 		case UCRP_MAPDESTROYOBJECTS:
 		{
 			if (cn->stringvar == NULL)
@@ -2865,7 +2865,7 @@ static const char *M_GetConditionString(condition_t *cn)
 		case UCRP_DRAFTDURATION:
 			return va("consistently tether off other racers for %u seconds", cn->requirement);
 		case UCRP_GROWCONSECUTIVEBEAMS:
-			return va("touch the blue beams from your own Shrink at least %u times before returning to normal size", cn->requirement);
+			return va("touch the blue beams from your own Minimize Ray at least %u times before returning to normal size", cn->requirement);
 
 		case UCRP_TRIGGER:
 			return "do something special";
@@ -2877,26 +2877,26 @@ static const char *M_GetConditionString(condition_t *cn)
 		case UCRP_TOUCHSNEAKERPANEL:
 			return (cn->requirement == 1) ? "touch a Sneaker Panel" : "don't touch any Sneaker Panels";
 		case UCRP_RINGDEBT:
-			return (cn->requirement == 1) ? "go into Ring debt" : "don't go into Ring debt";
+			return (cn->requirement == 1) ? "go into debt" : "don't go into debt";
 		case UCRP_FAULTED:
 			return (cn->requirement == 1) ? "FAULT during POSITION" : "don't FAULT during POSITION";
 
 		case UCRP_TRIPWIREHYUU:
-			return "go through Tripwire while afflicted by Hyudoro";
+			return "go through Tripwire while afflicted by Haunter";
 		case UCRP_WHIPHYUU:
-			return "Insta-Whip a racer while afflicted by Hyudoro";
+			return "Insta-Whip a racer while afflicted by Haunter";
 		case UCRP_SPBNEUTER:
-			return "shock a Self-Propelled Bomb into submission";
+			return "shock a Turtonator Shell into submission";
 		case UCRP_LANDMINEDUNK:
-			return "dunk a Land Mine on another racer's head";
+			return "dunk a Blast Trap on another racer's head";
 		case UCRP_HITMIDAIR:
 			return "hit another racer with a projectile while you're both in the air";
 		case UCRP_HITDRAFTERLOOKBACK:
 			return "hit a racer tethering off you while looking back at them";
 		case UCRP_GIANTRACERSHRUNKENORBI:
-			return "hit a giant racer with a shrunken Orbinaut";
+			return "hit a giant racer with a shrunken Squirtle Shell";
 		case UCRP_RETURNMARKTOSENDER:
-			return "when cursed with Eggmark, blow up the racer responsible";
+			return "when cursed with the Fake Item Box, blow up the racer responsible";
 
 		case UCRP_TRACKHAZARD:
 		{
@@ -2921,22 +2921,22 @@ static const char *M_GetConditionString(condition_t *cn)
 					work = "boost power";
 					break;
 				case UFOD_WHIP:
-					work = "Insta-Whip";
+					work = "Power Whip";
 					break;
 				case UFOD_BANANA:
-					work = "Bananas";
+					work = "Nanab Berries";
 					break;
 				case UFOD_ORBINAUT:
-					work = "Orbinauts";
+					work = "Squirtle Shells";
 					break;
 				case UFOD_JAWZ:
-					work = "Jawz";
+					work = "Chewtle Shells";
 					break;
 				case UFOD_SPB:
-					work = "Self-Propelled Bombs";
+					work = "Turtonator Shells";
 					break;
 				case UFOD_GACHABOM:
-					work = "Gachabom";
+					work = "Gyrobomb";
 					break;
 				default:
 					break;
@@ -2949,7 +2949,7 @@ static const char *M_GetConditionString(condition_t *cn)
 		}
 
 		case UCRP_GACHABOMMISER:
-			return "using exactly one Gachabom repeatedly";
+			return "using exactly one Gyrobomb repeatedly";
 
 		case UCRP_WETPLAYER:
 			return va("without %s %s",

@@ -84,22 +84,22 @@ CV_PossibleValue_t CV_TrueFalse[] = {{0, "False"}, {1, "True"}, {0, NULL}};
 // SRB2kart
 CV_PossibleValue_t kartspeed_cons_t[] = {
 	{KARTSPEED_AUTO, "Auto Gear"},
-	{KARTSPEED_EASY, "Gear 1"},
-	{KARTSPEED_NORMAL, "Gear 2"},
-	{KARTSPEED_HARD, "Gear 3"},
+	{KARTSPEED_EASY, "50cc"},
+	{KARTSPEED_NORMAL, "100cc"},
+	{KARTSPEED_HARD, "150cc"},
 	{0, NULL}
 };
 CV_PossibleValue_t dummykartspeed_cons_t[] = {
-	{KARTSPEED_EASY, "Gear 1"},
-	{KARTSPEED_NORMAL, "Gear 2"},
-	{KARTSPEED_HARD, "Gear 3"},
+	{KARTSPEED_EASY, "50cc"},
+	{KARTSPEED_NORMAL, "100cc"},
+	{KARTSPEED_HARD, "150cc"},
 	{0, NULL}
 };
 CV_PossibleValue_t gpdifficulty_cons_t[] = {
-	{KARTSPEED_EASY, "Relaxed"},
-	{KARTSPEED_NORMAL, "Intense"},
-	{KARTSPEED_HARD, "Vicious"},
-	{KARTGP_MASTER, "Master"},
+	{KARTSPEED_EASY, "Breezy"},
+	{KARTSPEED_NORMAL, "Normal"},
+	{KARTSPEED_HARD, "Brutal"},
+	{KARTGP_MASTER, "Nightmare"},
 	{0, NULL}
 };
 
